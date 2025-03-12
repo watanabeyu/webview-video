@@ -22,7 +22,7 @@
   <script>
     // ---- カメラ映像を取得 ----
     const video = document.getElementById('video');
-    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    navigator.mediaDevices.getUserMedia({ video: {facingMode:"environment"}, audio: false })
       .then(stream => {
         video.srcObject = stream;
       })
