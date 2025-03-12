@@ -58,7 +58,7 @@
     const loader = new THREE.GLTFLoader();
     loader.load(
       // GLB ファイルパス。実際にはサーバ上に配置 or Base64 埋め込みなど
-      'http://127.0.0.1:9199/v0/b/develop-mnc.firebasestorage.app/o/object%2FZHSdOCcGZfNsjaEjAHCs%2F5216ac77-932f-4700-8aec-fa3a18422488.glb?alt=media&token=0eb55550-6ddb-44af-8a5e-dc59caf2fbbd',
+      "https://watanabeyu.github.io/webview-video/sample.glb",
       gltf => {
         const model = gltf.scene;
         model.position.set(0, -1, 0);
